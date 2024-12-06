@@ -204,6 +204,13 @@ body{
   font-size: 5rem;
   color: var(--cor-primaria);
   font-weight: 900;
+  text-shadow: 3px 3px #ffffff;
+  filter: drop-shadow(2px 2px 0px var(--cor-terciaria));
+}
+.bordaNova{
+    filter: drop-shadow(2px 2px 0px var(--cor-terciaria));
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
 }
 @media screen and (max-width: 1680px){
     .float-assets{max-width: 15%;}
