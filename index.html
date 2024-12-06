@@ -46,7 +46,7 @@
         <div class="row justify-content-between">
           <div class="col-11">
             <h1>Técnico em Guia de Turismo</h1>
-            <h2 class="my-3">Título da UC</h2>
+            <h2 class="my-3">Experimentação</h2>
           </div>
           <div class="col-1">
             <img src="tela_inicial/assets/logo_senac_2.png"/>
@@ -61,7 +61,7 @@
             <div class="dropdown">
               <button class="btMenuPrint dropdown-toggle" type="button" id="dropdownMenuPrint" data-bs-toggle="dropdown" aria-expanded="false">Imprimir os conteúdos</button>
               <ul class="dropdown-menu menuPrint" aria-labelledby="dropdownMenuPrint">
-                <li><h6 class="dropdown-header">Semana 1</h6></li>
+                <!-- <li><h6 class="dropdown-header">Semana 1</h6></li> -->
                 <!--
                     Para imagens linkadas em um tópico onde estas estiverem em um diretorio diferente do padrão configurado no print2.js, devemos informar em qual pasta em que estão
                     as imagens(a pasta dentro do diretorio do topico, a partir da raiz do mesmo) utilizando a atributo data-imgpath="<nome da pasta>" no botão ou link que irá fazer
@@ -72,11 +72,9 @@
                     que deve ser aberto no print, por exemplo:
                     <a class="dropdown-item imprimir" href="#" data-conteudo="01_recursos_basicos" data-imgpath="img" data-startpoint="teste.html">Recursos básicos</a>
                 -->
-                <li><a class="dropdown-item imprimir" href="#" data-conteudo="01_recursos_basicos">Recursos básicos</a></li>
-                <li><a class="dropdown-item imprimir" href="#" data-conteudo="02_atividades">Atividades</a></li>
-                <li><a class="dropdown-item imprimir" href="#" data-conteudo="03_menu_lateral">Menu lateral ancorado</a></li>
-                <li><a class="dropdown-item imprimir" href="#" data-conteudo="04_blocado">Template blocado</a></li>
-                <li><a class="dropdown-item imprimir" href="#" data-conteudo="05_fundo_escuro">Template com background</a></li>
+                <li><a class="dropdown-item imprimir" href="#" data-conteudo="01_experimentacao">Recursos básicos</a></li>
+                <!-- <li><a class="dropdown-item imprimir" href="#" data-conteudo="02_atividades">Atividades</a></li> -->
+                
                 <!-- <li role="separator" class="divider"></li>
                 <li><h6 class="dropdown-header">Semana 2</h6></li>
                 <li><a class="dropdown-item" href="#">...</a></li> -->
@@ -96,11 +94,11 @@
 	     -->
 
       <!-- grupo 1 -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12">
           <h2>1ª Semana</h2>
         </div>
-      </div>
+      </div> -->
 
       <div class="row grupo" data-group="grupo1">
         <h3 class="d-block d-lg-none">A fazer</h3>
@@ -113,8 +111,8 @@
 					    dentro de uma ul, sempre posicionados na lista-fazer inicialmente
 				     -->
             <li class="drag-item fazer" data-item="link1" data-bs-toggle="tooltip" data-placement="top">
-              <a href="01_recursos_basicos/index.html" target="_blank" class="link">Recursos básicos</a>
-              <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="01_recursos_basicos">Imprimir</button>
+              <a href="01_experimentacao/index.html" target="_blank" class="link">Conheça seu curso</a>
+              <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="01_experimentacao">Imprimir</button>
               <div class="dropdown dropdown-bubble">
                 <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
                   <span class="caret"></span>
@@ -128,8 +126,8 @@
               </div>
             </li>
             <li class="drag-item fazer" data-item="link2" data-bs-toggle="tooltip" data-placement="top">
-              <a href="02_atividades/index.html" target="_blank" class="link">Atividades</a>
-              <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="02_atividades">Imprimir</button>
+              <a href="conheca_seu_curso_rev.pdf" target="_blank" class="link">Mundo do trabalho</a>
+              <!-- <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="02_atividades">Imprimir</button> -->
               <div class="dropdown dropdown-bubble">
                 <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
                   <span class="caret"></span>
@@ -142,7 +140,7 @@
                 </ul>
               </div>
             </li>
-            <li class="drag-item fazer" data-item="link3" data-bs-toggle="tooltip" data-placement="top">
+            <!-- <li class="drag-item fazer" data-item="link3" data-bs-toggle="tooltip" data-placement="top">
               <a href="03_menu_lateral/index.html" target="_blank" class="link">Menu lateral ancorado</a>
               <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="03_menu_lateral">Imprimir</button>
               <div class="dropdown dropdown-bubble">
@@ -156,7 +154,7 @@
                   <li class="mover-feito">Feito</li>
                 </ul>
               </div>
-            </li>
+            </li> -->
           </ul>
           <div class="mao">
             <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />

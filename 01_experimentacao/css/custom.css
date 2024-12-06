@@ -1,0 +1,236 @@
+body{
+    background-image: 
+    radial-gradient(farthest-corner at -2% 25%,  var(--cor-secundaria) 0%, transparent 25%), 
+    radial-gradient(farthest-corner at  126% 55%, var(--cor-primaria) 5%, transparent 45%), 
+    radial-gradient(farthest-corner at 10% 104%, var(--cor-secundaria) 0%, transparent 35%);
+    /* radial-gradient(farthest-corner at -2% 25%,  var(--cor-secundaria) 0%, transparent 25%), 
+    radial-gradient(farthest-corner at  106% 75%, var(--cor-primaria) 5%, transparent 25%), 
+    radial-gradient(farthest-corner at -2% 114%, var(--cor-secundaria) 0%, transparent 25%); */
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: auto;
+    overflow-x: hidden;
+}
+.bg-painel-ucs{
+    position: relative;
+    width: 702px;
+    height: 626px;
+    margin: 0 auto;
+    background-image: url('../img/painel01.png');relative;
+}
+.bt1-pulse,
+.bt2-pulse,
+.bt3-pulse,
+.bt4-pulse,
+.bt5-pulse,
+.bt6-pulse,
+.bt7-pulse,
+.bt8-pulse,
+.bt9-pulse{
+    position: absolute;
+    width: 38px;
+    height: 74px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+}
+
+.bt1-pulse{top: 203px; left: 222px; background-image: url('../img/painel01/bt01.png');}
+.bt2-pulse{top: 218px; left: 293px; background-image: url('../img/painel01/bt02.png');}
+.bt3-pulse{top: 300px; left: 300px; background-image: url('../img/painel01/bt03.png');}
+.bt4-pulse{top: 231px;left: 362px; background-image: url('../img/painel01/bt04.png');}
+.bt5-pulse{top: 239px;left: 412px; background-image: url('../img/painel01/bt05.png');}
+.bt6-pulse{top: 132px;left: 459px; background-image: url('../img/painel01/bt06.png');}
+.bt7-pulse{top: 202px;left: 489px; background-image: url('../img/painel01/bt07.png');}
+.bt8-pulse{top: 242px;left: 529px; background-image: url('../img/painel01/bt08.png');}
+.bt9-pulse{top: 317px;left: 544px;width: 33px;height: 72px;
+     background-image: url('../img/painel01/bt09.png');
+}
+.pulse-button:before {
+    content: '';
+    top: 2px;
+    left: 4px;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(232, 76, 61);
+    border-radius: 50%;
+    background-color: transparent;
+    /* background-image: url('../img/bt_mais.png'); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+  
+.bt9-pulse.pulse-button:before {
+  content: '';
+  left: 2px;
+}
+  .pulse-button:hover 
+  {
+    -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+  }
+  .pulse-button.visitado{
+    background-image: none;
+    animation: none;
+  }
+  .botaoCheck.pulse-button.visitado::before {
+    display: none;
+  }
+.botaoCheck.visitado::after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: -5px;
+    right: -6px;
+    background: url(../../assets/images/check.svg) no-repeat;
+    background-size: cover;
+  }
+  @-webkit-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+  @-moz-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+  @-ms-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+  @keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+  
+  .box-float-text{
+    position: relative;
+  }
+  .float-text1{
+    position: absolute;
+    right: 50px;
+    max-width: 440px;
+  }
+  .float-text1 p, .float-text2 p, .float-text3 p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .float-text2{
+    position: absolute;
+    left: 60px;
+    max-width: 420px;
+  }
+  .float-text3{
+    position: absolute;
+    right: 50px;
+    max-width: 440px;
+  }
+  .box-icones{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .icone-item{
+    position: relative;
+    width: 184px;
+    height: 197px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .icone-item1{
+    background-image: url('../img/bt01_1.png');
+  }
+  .icone-item1:hover{
+    background-image: url('../img/bt01b_1.png');
+  }
+  .icone-item2{
+    background-image: url('../img/bt02_1.png');
+  }
+  .icone-item2:hover{
+    background-image: url('../img/bt02b_1.png');
+  }
+  .icone-item3{
+    background-image: url('../img/bt03_1.png');
+  }
+  .icone-item3:hover{
+    background-image: url('../img/bt03b_1.png');
+  }
+  .icone-item4{
+    background-image: url('../img/bt04_1.png');
+  }
+  .icone-item4:hover{
+    background-image: url('../img/bt04b_1.png');
+  }
+  .icone-item5{
+    background-image: url('../img/bt05_1.png');
+  }
+  .icone-item5:hover{
+    background-image: url('../img/bt05b_1.png');
+  }
+  .icone-item6{
+    background-image: url('../img/bt06_1.png');
+  }
+  .icone-item6:hover{
+    background-image: url('../img/bt06b_1.png');
+  }
+  /* template */
+  .accordion-item {
+    border-radius: 20px;
+}
+.accordion-item:first-of-type,.accordion-item:last-of-type{
+    border-radius: 20px !important;
+}
+.float-assets{
+    position: absolute;
+}
+.item1-fla{
+    top: 500px;
+}
+.item2-fla{
+    right: 0;
+    top: 50%;
+}
+.item3-fla{
+    bottom: 300px;
+}
+.destaque-extra{
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 30px auto;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.destaque-textoInicial{
+  font-size: 5rem;
+  color: var(--cor-primaria);
+  font-weight: 900;
+}
+@media screen and (max-width: 1680px){
+    .float-assets{max-width: 15%;}
+}
+@media screen and (max-width: 1380px){
+    .float-assets{max-width: 10%;}
+}
+@media screen and (max-width: 1180px){
+    .float-assets{display: none;}
+}
+@media screen and (max-width: 980px){
+  .box-float-text img{ display: none !important;}
+  .float-text2, .float-text1, .float-text3{ position: relative; 
+    max-width: 100%; left: 0;}
+}
+@media screen and (max-width: 700px){
+  .bg-painel-ucs{
+    margin-left: -100px;
+  }
+}
+@media screen and (max-width: 580px){
+  .bg-painel-ucs{
+    margin-left: -200px;
+  }
+}
+@media screen and (max-width: 480px){
+  .bg-painel-ucs{
+    margin-left: -250px;
+  }
+}
