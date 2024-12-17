@@ -45,10 +45,11 @@ body{
 .bt5-pulse{top: 239px;left: 412px; background-image: url('../img/painel01/bt05.png');}
 .bt6-pulse{top: 132px;left: 459px; background-image: url('../img/painel01/bt06.png');}
 .bt7-pulse{top: 202px;left: 489px; background-image: url('../img/painel01/bt07.png');}
-.bt8-pulse{top: 242px;left: 529px; background-image: url('../img/painel01/bt08.png');}
+.bt8-pulse{top: 242px;left: 529px; width: 91px; background-image: url('../img/painel01/bt08b_1.png');}
 .bt9-pulse{top: 317px;left: 544px;width: 33px;height: 72px;
      background-image: url('../img/painel01/bt09.png');
 }
+
 .pulse-button:before {
     content: '';
     top: 2px;
@@ -83,6 +84,7 @@ body{
     background-image: none;
     animation: none;
   }
+  .bt8-pulse.visitado{background-image: url('../img/painel01/bt08b_1.png');}
   .botaoCheck.pulse-button.visitado::before {
     display: none;
   }
@@ -96,6 +98,8 @@ body{
     background: url(../../assets/images/check.svg) no-repeat;
     background-size: cover;
   }
+  .botaoCheck.bt8-pulse.visitado::after{right: 10px;}
+  .accordion-item{background-color: transparent;}
   @-webkit-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
   @-moz-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
   @-ms-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
